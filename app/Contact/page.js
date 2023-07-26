@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div>
-    <img src="/railroadParkCrop.jpg" alt="railroadPark" className="w-full h-96 object-cover object-center"/>
+    <div className="bg-gray-800">
+    <img src="/railroadParkCrop.jpg" alt="railroadPark" className="w-full h-96 object-cover object-bottom"/>
     <div className="max-w-3xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-semibold mb-6">Contact Us</h1>
+      <h1 className="text-3xl font-semibold mb-6 text-gray-100">Contact Us</h1>
       <form>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-100">
             Name
           </label>
           <input
@@ -20,7 +20,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-100">
             Email
           </label>
           <input
@@ -32,7 +32,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-100">
             Subject
           </label>
           <input
@@ -44,7 +44,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-100">
             Message
           </label>
           <textarea
@@ -57,7 +57,7 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
           Submit
         </button>
