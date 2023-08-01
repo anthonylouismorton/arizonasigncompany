@@ -2,7 +2,7 @@ import React from "react";
 
 const InstallationImage = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen ">
       <img
         src="/installation.jpeg"
         alt="Installation"
