@@ -50,7 +50,7 @@ export default function Contact() {
           <textarea
             id="message"
             name="message"
-            rows={4} // Specify the number of rows (lines) to display
+            rows={4}
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
             required
           />
