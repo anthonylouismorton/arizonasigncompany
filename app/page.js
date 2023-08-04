@@ -3,7 +3,7 @@ import KingmanSign from './KingmanSign'
 import HomeInformation from './HomeInformation';
 export default function Home() {
   return (
-    <main>
+    <main className='bg-gray-800 pt-16'>
       <KingmanSign/>
       <HomeInformation/>
     </main>

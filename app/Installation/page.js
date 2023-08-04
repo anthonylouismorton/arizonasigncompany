@@ -4,7 +4,7 @@ import InstallationForm from './InstallationForm';
 
 export default function Installation() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 pt-16">
       <InstallationInfo/>
       <InstallationForm/>
     </div>

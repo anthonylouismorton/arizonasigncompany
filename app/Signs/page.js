@@ -1,17 +1,17 @@
 import React from 'react';
 import FullPageCarousel from './FullPageCarousel';
-import BillboardProposal from './BillboardProposal';
+import SignProposal from './SignProposal';
 import CustomSigns from './CustomSigns';
 import DigitalDisplays from './DigitalDisplays';
 import LedLighting from './LedLighting';
-export default function Billboards() {
+export default function Signs() {
   return (
-      <div>
-        <FullPageCarousel/>
-        <BillboardProposal/>
-        <CustomSigns/>
-        <DigitalDisplays/>
-        <LedLighting/>
-      </div>
+    <div>
+      <FullPageCarousel/>
+      <CustomSigns/>
+      <DigitalDisplays/>
+      <LedLighting/>
+      <SignProposal/>
+    </div>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div className="bg-gray-800">
+    <div className="bg-gray-800 pt-16">
     <img src="/railroadParkCrop.jpg" alt="railroadPark" className="w-full h-96 object-cover object-bottom"/>
     <div className="max-w-3xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-semibold mb-6 text-gray-100">Contact Us</h1>
