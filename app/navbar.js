@@ -67,7 +67,7 @@ const Navbar = () => {
       >
         {(ref) => (
           <div className="md:hidden" id="mobile-menu">
-            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 max-w-screen">
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/Signs">
                 Signs
               </Link>
