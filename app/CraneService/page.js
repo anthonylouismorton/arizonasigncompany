@@ -1,8 +1,12 @@
 import React from 'react';
+import CraneInfo from './CraneInfo';
+import CraneForm from './CraneForm';
+
 export default function CraneService() {
   return (
     <div className='pt-16'>
-      <h1>Crane Service</h1>
+      <CraneInfo/>
+      <CraneForm/>
     </div>                                   
   );
 };

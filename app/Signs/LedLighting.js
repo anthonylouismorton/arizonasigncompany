@@ -4,7 +4,7 @@ const LedLighting = () => {
   return (
     <div className="flex bg-gray-800">
       <div className="p-4">
-        <div className="flex justify justify-center">
+        <div className="flex justify-center">
           <h2 className="text-2xl font-bold text-gray-100 p-4">LED lighting</h2>
         </div>
         <p className="text-gray-100 p-4">

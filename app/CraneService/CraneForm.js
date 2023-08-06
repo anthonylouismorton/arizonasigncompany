@@ -1,17 +1,17 @@
 import React from 'react';
 
-export default function SignProposal() {
+export default function CraneForm() {
   return (
-    <div className="bg-gray-100 flex flex-col items-center p-8">
-      <h1 className="text-3xl font-semibold text-gray-800 text-center mb-4">
-        Interested in receiving a quote?
+    <div className="bg-gray-800 flex flex-col items-center p-8">
+      <h1 className="text-3xl font-semibold text-gray-100 text-center mb-4">
+        Interested in scheduling crane service?
       </h1>
-      <h6 className="text-lg text-gray-800 text-center mb-6">
-        Provide your contact information and a brief description of your project and one of our sales representatives will contact you.
+      <h6 className="text-lg text-gray-100 text-center mb-6 w-2/3">
+        Please provide your contact information, along with the date, time, and a brief description of the work being performed. Our dedicated crane service scheduler will promptly get in touch with you to assist with your needs.
       </h6>
       <form className="w-full max-w-md">
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-800">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-100">
             Name
           </label>
           <input
@@ -23,7 +23,19 @@ export default function SignProposal() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-800">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-100">
+            Requested Date/Time of Crane Service
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-100">
             Email
           </label>
           <input
@@ -35,7 +47,7 @@ export default function SignProposal() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="number" className="block text-sm font-medium text-gray-800">
+          <label htmlFor="number" className="block text-sm font-medium text-gray-100">
             Phone Number
           </label>
           <input
@@ -47,8 +59,8 @@ export default function SignProposal() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="description" className="block text-sm font-medium text-gray-800">
-            Description
+          <label htmlFor="description" className="block text-sm font-medium text-gray-100">
+            Crane Service Description
           </label>
           <textarea
             type="text"
@@ -60,18 +72,9 @@ export default function SignProposal() {
             required
           />
         </div>
-        <label htmlFor="attachment" className="block text-sm font-medium text-gray-800">
-          Attach Document
-        </label>
-        <input
-          type="file"
-          id="attachment"
-          name="attachment"
-          className="mt-1 block w-full rounded-md shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-800 text-gray-100 placeholder-gray-500"
-        />
         <button
           type="submit"
-          className="px-4 py-2 bg-gray-800 text-gray-100 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
+          className="px-4 py-2 bg-gray-100 text-gray-800 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
         >
           Submit
         </button>

@@ -23,7 +23,7 @@ const CustomNextArrow = (props) => {
   );
 };
 
-const FullPageCarousel = () => {
+const SignSlider = () => {
   const settings = {
     // dots: true,
     infinite: true,
@@ -31,7 +31,7 @@ const FullPageCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4500,
     // prevArrow: <CustomPrevArrow />,
     // nextArrow: <CustomNextArrow />,
   };
@@ -128,4 +128,4 @@ const FullPageCarousel = () => {
   );
 };
 
-export default FullPageCarousel;
+export default SignSlider;

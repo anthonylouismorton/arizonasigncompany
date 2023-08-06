@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 bg-opacity-90 h-16 fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-black bg-opacity-90 h-16 fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -23,16 +23,16 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link className="text-gray-100 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/Signs">
+                <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium" href="/Signs">
                     Signs
                 </Link>
-                <Link className="text-gray-100 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/Installation">
+                <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium" href="/Installation">
                     Installation
                 </Link>
-                <Link className="text-gray-100 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/CraneService">
+                <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium" href="/CraneService">
                     Crane Service
                 </Link>
-                <Link className="text-gray-100 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/Contact">
+                <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium" href="/Contact">
                     Contact
                 </Link>
               </div>
@@ -66,18 +66,24 @@ const Navbar = () => {
         leaveTo="opacity-0 scale-95"
       >
         {(ref) => (
-          <div className="md:hidden" id="mobile-menu">
-            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 max-w-screen">
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/Signs">
+          <div
+            ref={ref}
+            className={`${
+              isOpen ? 'block' : 'hidden'
+            } md:hidden bg-gray-800 w-full`}
+            id="mobile-menu"
+          >
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 max-w-screen">
+              <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Signs">
                 Signs
               </Link>
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/Installation">
+              <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Installation">
                 Installation
               </Link>
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/Crane-service">
+              <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Crane-service">
                 Crane Service
               </Link>
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/Contact">
+              <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Contact">
                 Contact
               </Link>
             </div>

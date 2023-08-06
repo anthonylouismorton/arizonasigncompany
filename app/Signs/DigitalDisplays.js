@@ -3,8 +3,8 @@ import React from "react";
 const DigitalDisplays = () => {
   return (
     <div>
-      <div className="p-4">
-        <div className="flex justify justify-center">
+      <div className="p-4 bg-gray-100">
+        <div className="flex justify-center">
           <h2 className="text-2xl font-bold text-gray-800 p-4">Digital Displays</h2>
         </div>
         <p className="p-4">
