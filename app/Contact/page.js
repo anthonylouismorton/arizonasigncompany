@@ -1,12 +1,47 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 
 export default function Contact() {
+  const [contactInfo, setContactInfo] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setContactInfo((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(contactInfo),
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully!');
+      } else {
+        console.error('Failed to send email.');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
+  };
+
   return (
-    <div className="bg-gray-800 pt-16">
-    <img src="/railroadParkCrop.jpg" alt="railroadPark" className="w-full h-96 object-cover object-bottom"/>
+  <div className="bg-gray-800 pt-16">
+      <img src="/railroadParkCrop.jpg" alt="railroadPark" className="w-full h-96 object-cover object-bottom"/>
     <div className="max-w-3xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-semibold mb-6 text-gray-100">Contact Us</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium text-gray-100">
             Name
@@ -17,6 +52,8 @@ export default function Contact() {
             name="name"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
             required
+            value={contactInfo.name}
+            onChange={handleChange}
           />
         </div>
         <div className="mb-4">
@@ -29,6 +66,8 @@ export default function Contact() {
             name="email"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
             required
+            value={contactInfo.email}
+            onChange={handleChange}
           />
         </div>
         <div className="mb-4">
@@ -41,6 +80,8 @@ export default function Contact() {
             name="subject"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
             required
+            value={contactInfo.subject}
+            onChange={handleChange}
           />
         </div>
         <div className="mb-4">
@@ -53,6 +94,8 @@ export default function Contact() {
             rows={4}
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
             required
+            value={contactInfo.message}
+            onChange={handleChange}
           />
         </div>
         <button

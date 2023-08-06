@@ -1,16 +1,12 @@
 import React from 'react';
 import SignSlider from './SignSlider';
 import SignProposal from './SignProposal';
-import CustomSigns from './CustomSigns';
-import DigitalDisplays from './DigitalDisplays';
-import LedLighting from './LedLighting';
+import SignInfo from './SignInfo';
 export default function Signs() {
   return (
     <div>
       <SignSlider/>
-      <CustomSigns/>
-      <DigitalDisplays/>
-      <LedLighting/>
+      <SignInfo/>
       <SignProposal/>
     </div>
   );
