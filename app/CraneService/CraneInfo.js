@@ -6,7 +6,7 @@ const CraneInfo = () => {
       <img
         src="/cranelift3.jpg"
         alt="Installation"
-        className="object-cover object-center w-full h-[100vh]"
+        className="object-cover object-top w-full h-[91vh]"
       />
       <div className="bg-gray-100 p-4">
         <div className="flex justify-center">

@@ -80,7 +80,7 @@ const Navbar = () => {
               <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Installation">
                 Installation
               </Link>
-              <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Crane-service">
+              <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/CraneService">
                 Crane Service
               </Link>
               <Link className="text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Contact">
