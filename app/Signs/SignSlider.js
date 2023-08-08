@@ -37,7 +37,7 @@ const SignSlider = () => {
   };
 
   return (
-    <div className="h-[100vh]">
+    <div className="h-[100vh] overflow-hidden">
       <Slider {...settings}>
         <div className="h-[100vh]">
           <div className="relative h-full">

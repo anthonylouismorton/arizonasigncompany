@@ -4,7 +4,7 @@ const InstallationInfo = () => {
       <img
         src="/newinstall.jpg"
         alt="Installation"
-        className="object-cover object-top w-full h-[100vh]"
+        className="object-cover object-top w-full h-[calc(100vh-64px)]"
       />
       <div className="bg-gray-100 p-4">
         <div className="flex justify-center">

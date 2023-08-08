@@ -4,7 +4,7 @@ import SignProposal from './SignProposal';
 import SignInfo from './SignInfo';
 export default function Signs() {
   return (
-    <div>
+    <div className="pt-16 bg-custom-color">
       <SignSlider/>
       <SignInfo/>
       <SignProposal/>

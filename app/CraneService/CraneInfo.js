@@ -6,7 +6,7 @@ const CraneInfo = () => {
       <img
         src="/cranelift3.jpg"
         alt="Installation"
-        className="object-cover object-top w-full h-[91vh]"
+        className="object-cover object-top w-full h-[calc(100vh-64px)]"
       />
       <div className="bg-gray-100 py-8 px-6">
         <h2 className="text-2xl font-bold text-gray-800 text-center">Need a lift?</h2>

@@ -1,7 +1,47 @@
-import React from 'react';
+"use client"
+import React, {useState} from 'react';
 
 export default function InstallationForm() {
+  const [signInfo, setSignInfo] = useState({
+    name: '',
+    email: '',
+    description: '',
+    phoneNumber: '',
+    attachment: '',
+    file: ''
+  });
+  const [emailSent, setEmailSent] = useState(false);
+  
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+  
+    if (name === "attachment") {
+      const selectedFile = files[0]; 
+      if (selectedFile) {
+        setSignInfo((prevData) => ({
+          ...prevData,
+          attachment: value,
+          file: selectedFile
+        }));
+      }
+    } else {
+      setSignInfo((prevData) => ({ ...prevData, [name]: value }));
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const response = await fetch('/api/installation', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(signInfo),
+    });
+    setEmailSent(true);
+  };
   return (
+    !emailSent ? (
     <div className="bg-gray-800 flex flex-col items-center p-8">
       <h1 className="text-3xl font-semibold text-gray-100 text-center mb-4">
         Are you looking for an install for a pre-existing sign project?
@@ -9,7 +49,7 @@ export default function InstallationForm() {
       <h6 className="text-lg text-gray-100 text-center mb-6">
         Submit your plans along with your contact information, and we can provide you a competitive installation quote.
       </h6>
-      <form className="w-full max-w-md">
+      <form className="w-full max-w-md" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium text-gray-100">
             Name
@@ -20,6 +60,8 @@ export default function InstallationForm() {
             name="name"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
+            value={signInfo.name}
+            onChange={handleChange}
           />
         </div>
         <div className="mb-4">
@@ -32,18 +74,22 @@ export default function InstallationForm() {
             name="email"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
+            value={signInfo.email}
+            onChange={handleChange}
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="number" className="block text-sm font-medium text-gray-100">
+          <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-100">
             Phone Number
           </label>
           <input
             type="text"
-            id="number"
-            name="number"
+            id="phoneNumber"
+            name="phoneNumber"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
+            value={signInfo.phoneNumber}
+            onChange={handleChange}
           />
         </div>
         <div className="mb-4">
@@ -58,6 +104,8 @@ export default function InstallationForm() {
             rows={3}
             className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
+            value={signInfo.description}
+            onChange={handleChange}
           />
         </div>
         <label htmlFor="attachment" className="block text-sm font-medium text-gray-100">
@@ -68,6 +116,8 @@ export default function InstallationForm() {
           id="attachment"
           name="attachment"
           className="mt-1 block w-full rounded-md shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-100 text-gray-800 placeholder-gray-500"
+          value={signInfo.attachment}
+          onChange={handleChange}
         />
         <button
           type="submit"
@@ -77,5 +127,11 @@ export default function InstallationForm() {
         </button>
       </form>
     </div>
+    ) : (
+    <div className="text-center px-4 py-8 h-72">
+      <h1 className="text-3xl font-semibold pb-6 pt-12 text-gray-700">We received your request!</h1>
+      <p className="text-gray-700">One of our representatives will contact you shortly.</p>
+    </div>
+    )
   );
 };
