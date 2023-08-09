@@ -43,12 +43,14 @@ export default function InstallationForm() {
   return (
     !emailSent ? (
       <div className="flex flex-col items-center py-16 px-4">
+      <div className="w-full max-w-2xl">
       <h1 className="text-3xl font-semibold text-center mb-4">
         Are you looking for an install for a pre-existing sign project?
       </h1>
       <h6 className="text-lg text-center mb-6">
         Submit your plans along with your contact information, and we can provide you a competitive installation quote.
       </h6>
+      </div>
       <form className="w-full max-w-md" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium">
@@ -100,7 +102,7 @@ export default function InstallationForm() {
             type="text"
             id="description"
             name="description"
-            placeholder="Please provide a brief description of your project (max 300 characters)."
+            placeholder="Please provide a brief description of your project."
             rows={3}
             className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
@@ -121,7 +123,7 @@ export default function InstallationForm() {
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-sm font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white mt-4"
+          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-sm font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"
         >
           Submit
         </button>

@@ -23,16 +23,16 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium" href="/Signs">
+                <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-sm text-sm font-medium" href="/Signs">
                     Signs
                 </Link>
-                <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium" href="/Installation">
+                <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-sm text-sm font-medium" href="/Installation">
                     Installation
                 </Link>
-                <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium" href="/CraneService">
+                <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-sm text-sm font-medium" href="/CraneService">
                     Crane Service
                 </Link>
-                <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium" href="/Contact">
+                <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-sm text-sm font-medium" href="/Contact">
                     Contact
                 </Link>
               </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-sm text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-before-yellow"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -74,16 +74,16 @@ const Navbar = () => {
             id="mobile-menu"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 max-w-screen">
-              <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Signs">
+              <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-sm text-sm font-medium block w-full" href="/Signs">
                 Signs
               </Link>
-              <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Installation">
+              <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-sm text-sm font-medium block w-full" href="/Installation">
                 Installation
               </Link>
-              <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/CraneService">
+              <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-sm text-sm font-medium block w-full" href="/CraneService">
                 Crane Service
               </Link>
-              <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-sm font-medium block w-full" href="/Contact">
+              <Link className="text-white hover:bg-white hover:text-black px-3 py-2 rounded-sm text-sm font-medium block w-full" href="/Contact">
                 Contact
               </Link>
             </div>

@@ -41,12 +41,14 @@ export default function SignProposal() {
   return (
     !emailSent ? (
     <div className="flex flex-col items-center py-16 px-4">
-      <h1 className="text-3xl font-semibold text-gray-800 text-center mb-4">
-        Interested in receiving a quote?
-      </h1>
-      <h6 className="text-lg text-gray-800 text-center mb-6">
-        Provide your contact information and a brief description of your project and one of our sales representatives will contact you.
-      </h6>
+      <div className="w-full max-w-xl">
+        <h1 className="text-3xl font-semibold text-gray-800 text-center mb-4">
+          Interested in receiving a quote?
+        </h1>
+        <h6 className="text-lg text-gray-800 text-center mb-6">
+          Provide your contact information and a brief description of your project and one of our sales representatives will contact you.
+        </h6>
+      </div>
       <form className="w-full max-w-md" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium text-gray-800">
@@ -56,7 +58,7 @@ export default function SignProposal() {
             type="text"
             id="name"
             name="name"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={signInfo.name}
             onChange={handleChange}
@@ -70,7 +72,7 @@ export default function SignProposal() {
             type="email"
             id="email"
             name="email"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={signInfo.email}
             onChange={handleChange}
@@ -84,7 +86,7 @@ export default function SignProposal() {
             type="text"
             id="phoneNumber"
             name="phoneNumber"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={signInfo.phoneNumber}
             onChange={handleChange}
@@ -98,9 +100,9 @@ export default function SignProposal() {
             type="text"
             id="description"
             name="description"
-            placeholder="Please provide a brief description of your project (max 300 characters)."
+            placeholder="Please provide a brief description of your project."
             rows={3}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={signInfo.description}
             onChange={handleChange}
@@ -113,13 +115,13 @@ export default function SignProposal() {
           type="file"
           id="attachment"
           name="attachment"
-          className="mt-1 block w-full rounded-md shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-800 text-gray-100 placeholder-gray-500"
+          className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-800 text-gray-100 placeholder-gray-500"
           value={signInfo.attachment}
           onChange={handleChange}
         /> */}
         <button
           type="submit"
-          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-md font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white mt-4"
+          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-sm font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"
         >
           Submit
         </button>
