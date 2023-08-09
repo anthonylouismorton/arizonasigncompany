@@ -4,7 +4,7 @@ const SignInfo = () => {
   return (
     <div className="pt-12">
       <div>
-        <h1 className="relative text-header-yellow font-bold text-5xl pb-6 pl-6 sm:pl-6 md:pl-12 lg:pl-24 before:absolute before:content ' ' before:w-3 before:h-14 before:bg-before-yellow before:left-0 before:top-1/6">
+        <h1 className="relative text-header-yellow font-bold text-5xl pb-6 pl-6 pr-6 sm:pl-6 md:pl-12 lg:pl-24 before:absolute before:content ' ' before:w-3 before:h-14 before:bg-before-yellow before:left-0 before:top-1/6">
           Custom Signs
         </h1>
         <div className="flex justify-center">
@@ -14,7 +14,7 @@ const SignInfo = () => {
         </div>
       </div>
       <div className="pt-12">
-        <h1 className="relative text-header-yellow font-bold text-5xl pb-6 pl-6 sm:pl-6 md:pl-12 lg:pl-24 before:absolute before:content ' ' before:w-3 before:h-14 before:bg-before-yellow before:left-0 before:top-1/6">
+        <h1 className="relative text-header-yellow font-bold text-5xl pb-6 pl-6 pr-6 sm:pl-6 md:pl-12 lg:pl-24 before:absolute before:content ' ' before:w-3 before:h-14 before:bg-before-yellow before:left-0 before:top-1/6">
           Digital Displays
         </h1>
         <div className="flex justify-center">
@@ -29,7 +29,7 @@ const SignInfo = () => {
         </div>
       </div>
       <div className="pt-12">
-        <h1 className="relative text-header-yellow font-bold text-5xl pb-6 pl-6 sm:pl-6 md:pl-12 lg:pl-24 before:absolute before:content ' ' before:w-3 before:h-14 before:bg-before-yellow before:left-0 before:top-1/6">
+        <h1 className="relative text-header-yellow font-bold text-5xl pb-6 pl-6 pr-6 sm:pl-6 md:pl-12 lg:pl-24 before:absolute before:content ' ' before:w-3 before:h-14 before:bg-before-yellow before:left-0 before:top-1/6">
           LED lighting
         </h1>
         <div className="flex justify-center">
