@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 export default function InstallationForm() {
   const [signInfo, setSignInfo] = useState({
@@ -42,58 +42,58 @@ export default function InstallationForm() {
   };
   return (
     !emailSent ? (
-    <div className="bg-gray-800 flex flex-col items-center p-8">
-      <h1 className="text-3xl font-semibold text-gray-100 text-center mb-4">
+      <div className="flex flex-col items-center py-16 px-4">
+      <h1 className="text-3xl font-semibold text-center mb-4">
         Are you looking for an install for a pre-existing sign project?
       </h1>
-      <h6 className="text-lg text-gray-100 text-center mb-6">
+      <h6 className="text-lg text-center mb-6">
         Submit your plans along with your contact information, and we can provide you a competitive installation quote.
       </h6>
       <form className="w-full max-w-md" onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-100">
+          <label htmlFor="name" className="block text-sm font-medium">
             Name
           </label>
           <input
             type="text"
             id="name"
             name="name"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={signInfo.name}
             onChange={handleChange}
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-100">
+          <label htmlFor="email" className="block text-sm font-medium">
             Email
           </label>
           <input
             type="email"
             id="email"
             name="email"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={signInfo.email}
             onChange={handleChange}
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-100">
+          <label htmlFor="phoneNumber" className="block text-sm font-medium">
             Phone Number
           </label>
           <input
             type="text"
             id="phoneNumber"
             name="phoneNumber"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50  px-2"
             required
             value={signInfo.phoneNumber}
             onChange={handleChange}
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="description" className="block text-sm font-medium text-gray-100">
+          <label htmlFor="description" className="block text-sm font-medium">
             Description
           </label>
           <textarea
@@ -102,26 +102,26 @@ export default function InstallationForm() {
             name="description"
             placeholder="Please provide a brief description of your project (max 300 characters)."
             rows={3}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
+            className="mt-1 block w-full rounded-sm border-gray-300 shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={signInfo.description}
             onChange={handleChange}
           />
         </div>
-        <label htmlFor="attachment" className="block text-sm font-medium text-gray-100">
+        <label htmlFor="attachment" className="block text-sm font-medium">
           Attach Document
         </label>
         <input
           type="file"
           id="attachment"
           name="attachment"
-          className="mt-1 block w-full rounded-md shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-100 text-gray-800 placeholder-gray-500"
+          className="mt-1 block w-full rounded-sm shadow-md focus:border-whitefocus:ring focus:ring-]white focus:ring-opacity-50 bg-white"
           value={signInfo.attachment}
           onChange={handleChange}
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-gray-100 text-gray-800 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
+          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-sm font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white mt-4"
         >
           Submit
         </button>

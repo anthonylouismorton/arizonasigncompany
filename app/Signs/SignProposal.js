@@ -119,7 +119,7 @@ export default function SignProposal() {
         /> */}
         <button
           type="submit"
-          className="px-4 py-2 bg-gray-800 text-gray-100 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
+          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-md font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white mt-4"
         >
           Submit
         </button>
