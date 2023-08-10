@@ -1,5 +1,6 @@
 "use client"
 import React, {useState} from 'react';
+import axios from 'axios'
 
 export default function SignProposal() {
   const [signInfo, setSignInfo] = useState({
@@ -7,6 +8,8 @@ export default function SignProposal() {
     email: '',
     description: '',
     phoneNumber: '',
+    attachment: '',
+    file: {}
   });
   const [emailSent, setEmailSent] = useState(false);
 
@@ -29,12 +32,17 @@ export default function SignProposal() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const response = await fetch('/api/signs', {
-      method: 'POST',
+    e.preventDefault()
+    var formData = new FormData();
+    formData.append('file', signInfo.file, signInfo.file.name);
+    formData.append('email', signInfo.email);
+    formData.append('name', signInfo.name);
+    formData.append('description', signInfo.description);
+    formData.append('phoneNumber', signInfo.phoneNumber);
+    await axios.post('/api/installation', formData, {
       headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(signInfo),
+        'Content-Type': 'multipart/form-data',
+      }
     });
     setEmailSent(true);
   };
@@ -108,17 +116,17 @@ export default function SignProposal() {
             onChange={handleChange}
           />
         </div>
-        {/* <label htmlFor="attachment" className="block text-sm font-medium text-gray-800">
+        <label htmlFor="attachment" className="block text-sm font-medium text-gray-800">
           Attach Document
         </label>
         <input
           type="file"
           id="attachment"
           name="attachment"
-          className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-800 text-gray-100 placeholder-gray-500"
+          className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 placeholder-gray-500 bg-white"
           value={signInfo.attachment}
           onChange={handleChange}
-        /> */}
+        />
         <button
           type="submit"
           className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-sm font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"

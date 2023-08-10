@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import axios from 'axios'
 
 export default function InstallationForm() {
   const [signInfo, setSignInfo] = useState({
@@ -8,7 +9,7 @@ export default function InstallationForm() {
     description: '',
     phoneNumber: '',
     attachment: '',
-    file: ''
+    file: {}
   });
   const [emailSent, setEmailSent] = useState(false);
   
@@ -31,26 +32,32 @@ export default function InstallationForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const response = await fetch('/api/installation', {
-      method: 'POST',
+    var formData = new FormData();
+    console.log('file', signInfo.file);
+    formData.append('file', signInfo.file, signInfo.file.name);
+    formData.append('email', signInfo.email);
+    formData.append('name', signInfo.name);
+    formData.append('description', signInfo.description);
+    formData.append('phoneNumber', signInfo.phoneNumber);
+    await axios.post('/api/installation', formData, {
       headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(signInfo),
+        'Content-Type': 'multipart/form-data',
+      }
     });
     setEmailSent(true);
   };
+  console.log(signInfo)
   return (
     !emailSent ? (
       <div className="flex flex-col items-center py-16 px-4">
-      <div className="w-full max-w-2xl">
-      <h1 className="text-3xl font-semibold text-center mb-4">
-        Are you looking for an install for a pre-existing sign project?
-      </h1>
-      <h6 className="text-lg text-center mb-6">
-        Submit your plans along with your contact information, and we can provide you a competitive installation quote.
-      </h6>
-      </div>
+        <div className="w-full max-w-2xl">
+        <h1 className="text-3xl font-semibold text-center mb-4">
+          Are you looking for an install for a pre-existing sign project?
+        </h1>
+        <h6 className="text-lg text-center mb-6">
+          Submit your plans along with your contact information, and we can provide you a competitive installation quote.
+        </h6>
+        </div>
       <form className="w-full max-w-md" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium">
