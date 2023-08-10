@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel='icon' href='/azsigns.jpg'/>
+        <link rel='shortcut icon' href='/tabLogo.jpg'/>
       </head>
       <body 
         className={inter.className}

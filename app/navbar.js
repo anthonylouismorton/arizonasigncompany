@@ -18,7 +18,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <a href='/'>
-              <img className="h-8 w-8" src="/azsigns.jpg" alt="Logo" />
+              <img className="h-8 w-8" src="/logo.jpg" alt="Logo" />
               </a>
             </div>
             <div className="hidden md:block">
