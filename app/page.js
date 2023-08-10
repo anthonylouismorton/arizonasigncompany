@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className='py-16 bg-custom-color'>
       <div>
-        <img src="/kingmanSign.jpg" alt="railroadPark" className="w-full object-cover object-top h-[60vh]"/>
+        <img src="/kingmanSign2.jpg" alt="railroadPark" className="w-full object-cover object-center h-[75vh]"/>
       </div>
       <div className="w-full pt-16">
         <div>
