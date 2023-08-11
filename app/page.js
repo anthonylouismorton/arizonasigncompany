@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import PageLinks from './pagelinks';
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <PageLinks/>
       <Footer/>
     </div>
   );  
