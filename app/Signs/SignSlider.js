@@ -44,10 +44,9 @@ const SignSlider = () => {
             <Image
               src="/billboard.jpg"
               alt="Installation"
-              layout="responsive"
-              width={1920}
-              height={1080}
-              className="w-full"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
@@ -58,10 +57,9 @@ const SignSlider = () => {
             <Image
               src="/billboard2.jpg"
               alt="Installation"
-              layout="responsive"
-              width={1920}
-              height={1080}
-              className="w-full"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
@@ -72,10 +70,9 @@ const SignSlider = () => {
             <Image
                 src="/billboard3.jpg"
                 alt="Installation"
-                layout="responsive"
-                width={1920}
-                height={1080}
-                className="w-full"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
               />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
@@ -86,10 +83,9 @@ const SignSlider = () => {
             <Image
                 src="/culvers.jpg"
                 alt="Installation"
-                layout="responsive"
-                width={1920}
-                height={1080}
-                className="w-full"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
               />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
@@ -100,10 +96,9 @@ const SignSlider = () => {
             <Image
                 src="/welding.jpg"
                 alt="Installation"
-                layout="responsive"
-                width={1920}
-                height={1080}
-                className="w-full"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
               />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>

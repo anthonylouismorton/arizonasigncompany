@@ -8,14 +8,14 @@ export default function Home() {
     <div>
       <div className='py-16 bg-custom-color'>
         <div>
-        <Image
-          src="/kingmanSign2.jpg"
-          alt="Installation"
-          layout="responsive"
-          width={1920}
-          height={1080}
-          className="w-full h-[calc(100vh-64px)]"
-        />
+          <Image
+            src="/kingmanSign2.jpg"
+            alt="Installation"
+            layout="responsive"
+            width={1920}
+            height={1080}
+            className="w-full h-[calc(100vh-64px)]"
+          />
         </div>
         <div className="w-full pt-16">
           <div>
