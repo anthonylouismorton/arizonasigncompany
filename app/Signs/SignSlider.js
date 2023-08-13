@@ -43,9 +43,11 @@ const SignSlider = () => {
           <div className="relative h-full">
             <Image
               src="/billboard.jpg"
-              alt="Slide 1"
-              layout="fill"
-              objectFit="cover"
+              alt="Installation"
+              layout="responsive"
+              width={1920}
+              height={1080}
+              className="w-full"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
@@ -55,9 +57,11 @@ const SignSlider = () => {
           <div className="relative h-full">
             <Image
               src="/billboard2.jpg"
-              alt="Slide 2"
-              layout="fill"
-              objectFit="cover"
+              alt="Installation"
+              layout="responsive"
+              width={1920}
+              height={1080}
+              className="w-full"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
@@ -66,11 +70,13 @@ const SignSlider = () => {
         <div className="h-[100vh]">
           <div className="relative h-full">
             <Image
-              src="/billboard3.jpg"
-              alt="Slide 3"
-              layout="fill"
-              objectFit="cover"
-            />
+                src="/billboard3.jpg"
+                alt="Installation"
+                layout="responsive"
+                width={1920}
+                height={1080}
+                className="w-full"
+              />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
           </div>
@@ -78,11 +84,13 @@ const SignSlider = () => {
         <div className="h-[100vh]">
           <div className="relative h-full">
             <Image
-              src="/culvers.jpg"
-              alt="Slide 4"
-              layout="fill"
-              objectFit="cover"
-            />
+                src="/culvers.jpg"
+                alt="Installation"
+                layout="responsive"
+                width={1920}
+                height={1080}
+                className="w-full"
+              />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
           </div>
@@ -90,39 +98,17 @@ const SignSlider = () => {
         <div className="h-[100vh]">
           <div className="relative h-full">
             <Image
-              src="/Welding.jpg"
-              alt="Slide 5"
-              layout="fill"
-              objectFit="cover"
-            />
+                src="/welding.jpg"
+                alt="Installation"
+                layout="responsive"
+                width={1920}
+                height={1080}
+                className="w-full"
+              />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             </div>
           </div>
         </div>
-        {/* <div className="h-[100vh]">
-          <div className="relative h-full">
-            <Image
-              src="/digitalBillboard.jpg"
-              alt="Slide 6"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-            </div>
-          </div>
-        </div> */}
-        {/* <div className="h-[100vh]">
-          <div className="relative h-full">
-            <Image
-              src="/ledDisplay.jpg"
-              alt="Slide 7"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-            </div>
-          </div>
-        </div> */}
       </Slider>
     </div>
   );
