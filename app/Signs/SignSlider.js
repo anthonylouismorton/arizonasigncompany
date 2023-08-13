@@ -40,12 +40,12 @@ const SignSlider = () => {
     <div className="h-[calc(100vh-64px)] overflow-hidden">
       <Slider {...settings}>
         <div className="h-[100vh]">
-          <div className="relative  h-full">
+          <div className="relative h-full">
             <Image
               src="/billboard.jpg"
               alt="Installation"
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               objectPosition="center"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
@@ -58,7 +58,7 @@ const SignSlider = () => {
               src="/billboard2.jpg"
               alt="Installation"
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               objectPosition="center"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
@@ -71,7 +71,7 @@ const SignSlider = () => {
                 src="/billboard3.jpg"
                 alt="Installation"
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
                 objectPosition="center"
               />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
@@ -84,7 +84,7 @@ const SignSlider = () => {
                 src="/culvers.jpg"
                 alt="Installation"
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
                 objectPosition="center"
               />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
@@ -97,7 +97,7 @@ const SignSlider = () => {
                 src="/welding.jpg"
                 alt="Installation"
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
                 objectPosition="center"
               />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">

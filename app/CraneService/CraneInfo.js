@@ -7,9 +7,8 @@ const CraneInfo = () => {
       <Image
         src="/cranelift3.jpg"
         alt="Installation"
-        layout="responsive"
-        width={1920}
-        height={1080}
+        height={1920}
+        width={1080}
         className="w-full h-[calc(100vh-64px)]"
       />
       <div className="pt-12">
