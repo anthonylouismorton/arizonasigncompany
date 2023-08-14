@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function PageLinks() {
   return (
-    <div className="flex flew-col md:flex-col lg:flex-row bg-custom-color">
-      <div className="relative flex-1 m-2 bg-custom-color">
+    <div className="flex flex-col md:flex-row lg:flex-row bg-custom-color">
+      <div className="relative m-2 bg-custom-color">
         <a href="/Signs">
         <Image
           src="/dairyQueenResize.jpg"
@@ -20,7 +20,7 @@ export default function PageLinks() {
           </a>
       </div>
       </div>
-      <div className="relative flex-1 m-2">
+      <div className="relative m-2">
         <a href="/Installation">
         <Image 
           src="/installation2resize.jpg" 
@@ -36,7 +36,7 @@ export default function PageLinks() {
           </a>
         </div>
       </div>
-      <div className="relative flex-1 m-2">
+      <div className="relative m-2">
         <a href="/CraneService">
         <Image 
           src="/cranelift2Resize.jpg" 
