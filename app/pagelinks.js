@@ -5,7 +5,7 @@ export default function PageLinks() {
     <div className="flex flex-col md:flex-col lg:flex-row bg-custom-color">
       <div className="relative flex-1 mb-2 mx-0 lg:mr-2">
         <a href="/Signs">
-          <div className="w-full md:h-[400px] relative">
+          <div className="w-full h-[400px] relative">
             <Image
               src="/dairyQueenResize.jpg"
               alt="Dairy Queen"
@@ -23,7 +23,7 @@ export default function PageLinks() {
       </div>
       <div className="relative flex-1 mb-2">
         <a href="/Installation">
-          <div className="w-full md:h-[400px] relative">
+          <div className="w-full h-[400px] relative">
             <Image
               src="/installation2resize.jpg"
               alt="Image 2"
@@ -41,7 +41,7 @@ export default function PageLinks() {
       </div>
       <div className="relative flex-1 mb-2 mx-0 lg:ml-2">
         <a href="/CraneService">
-          <div className="w-full md:h-[400px] relative">
+          <div className="w-full h-[400px] relative">
             <Image
               src="/cranelift2Resize.jpg"
               alt="Crane Lift"
