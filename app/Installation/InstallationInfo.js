@@ -9,8 +9,8 @@ const InstallationInfo = () => {
         alt="Installation"
         layout="responsive"
         objectFit="contain"
-        width={1366}
-        height={877}
+        width={1298}
+        height={738}
         className="max-w-full"
       />
       <div className="pt-16">
