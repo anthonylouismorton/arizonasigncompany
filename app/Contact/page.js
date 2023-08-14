@@ -8,12 +8,12 @@ export default function Contact() {
   return (
     <div className="pt-16 bg-custom-color">
       <Image
-        src="/railroadParkCrop.jpg"
+        src="/railroadParkCopy.jpg"
         alt="Lift"
         layout="responsive"
         objectFit="contain"
-        width={2154}
-        height={668}
+        width={1920}
+        height={1268}
         className="max-w-full"
       />
       <ContactForm />
