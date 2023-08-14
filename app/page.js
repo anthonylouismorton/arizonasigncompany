@@ -7,14 +7,16 @@ export default function Home() {
   return (
     <div>
       <div className='py-16 bg-custom-color'>
-        <Image
-          src="/kingmanSign2Copy.jpg"
-          alt="Installation"
-          layout="responsive"
-          width={1920}
-          height={1080}
-          className="w-full h-[calc(100vh-64px)]"
-        />
+        <div className="w-full h-[400px] md:h-[700px] relative">
+          <Image
+            src="/kingmanSign2Copy.jpg"
+            alt="Installation"
+            layout="responsive"
+            layout="fill"
+            objectFit="cover"
+            className="max-w-full object-bottom"
+          />
+        </div>
         <div className="w-full pt-16">
           <div>
             <h1 className="relative text-header-yellow font-bold text-5xl pb-6 pl-6 pr-6 sm:pl-6 md:pl-12 lg:pl-24 before:absolute before:content ' ' before:w-3 before:h-14 before:bg-before-yellow before:left-0 before:top-1/6">

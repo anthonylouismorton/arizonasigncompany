@@ -7,15 +7,15 @@ import Image from 'next/image';
 export default function Contact() {
   return (
     <div className="pt-16 bg-custom-color">
+      <div className="w-full h-[400px] md:h-[700px] relative">
         <Image
           src="/railroadParkCrop.jpg"
           alt="railroadPark"
-          layout="responsive"
-          objectFit="fill"
-          width={1298}
-          height={738}
-          className="max-w-full"
+          layout="fill"
+          objectFit="cover"
+          className="max-w-full object-bottom"
         />
+      </div>
       <ContactForm />
       <Footer />
     </div>
