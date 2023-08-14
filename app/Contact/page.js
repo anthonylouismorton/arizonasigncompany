@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div className="pt-16 bg-custom-color">
       <Image
-        src="/railroadParkCopy.jpg"
+        src="/railroadParkCopyResize.jpg"
         alt="Lift"
         layout="responsive"
         objectFit="contain"
