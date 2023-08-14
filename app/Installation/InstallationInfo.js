@@ -1,12 +1,17 @@
 import React from "react";
+import Image from 'next/image'
 
 const InstallationInfo = () => {
   return (
     <div>
-      <img
+      <Image
         src="/newinstall.jpg"
         alt="Installation"
-        className="max-w-full h-auto"
+        layout="responsive"
+        objectFit="contain"
+        width={1366}
+        height={877}
+        className="max-w-full"
       />
       <div className="pt-16">
         <div>
