@@ -7,17 +7,17 @@ import Image from 'next/image';
 export default function Contact() {
   return (
     <div className="pt-16 bg-custom-color">
-      <div className="h-96 w-full relative">
         <Image
-          alt='ra'
-          src='/railroadParkCrop.jpg'
-          layout='fill'
-          objectFit='cover'
-          objectPosition="bottom"
+          src="/railroadParkCrop.jpg"
+          alt="railroadPark"
+          layout="responsive"
+          objectFit="fill"
+          width={1298}
+          height={738}
+          className="max-w-full"
         />
-      </div>
-      <ContactForm/>
-      <Footer/>
+      <ContactForm />
+      <Footer />
     </div>
   );
-};
+}
