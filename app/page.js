@@ -11,7 +11,6 @@ export default function Home() {
           <Image
             src="/kingmanSign2Copy.jpg"
             alt="Installation"
-            layout="responsive"
             layout="fill"
             objectFit="cover"
             className="max-w-full object-bottom"
