@@ -4,7 +4,7 @@ import Image from "next/image";
 const SignImage = () => {
   return (
     <Image
-      src="/culvers.jpg"
+      src="/culvers2.jpg"
       alt="Installation"
       layout="responsive"
       width={1298}
