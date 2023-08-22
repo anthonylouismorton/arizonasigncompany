@@ -7,8 +7,8 @@ const SignImage = () => {
       src="/culvers2.jpg"
       alt="Installation"
       layout="responsive"
-      width={1298}
-      height={731}
+      width={1277}
+      height={715}
       className="max-w-full"
     />
   );

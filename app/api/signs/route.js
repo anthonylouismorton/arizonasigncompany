@@ -38,8 +38,8 @@ export async function POST(request){
   });
     
   const mailOptions = {
-    from: 'anthony.morton@prestigeworldwidewebdesignllc.com',
-    to: 'anthony.morton@prestigeworldwidewebdesignllc.com',
+    from: `${process.env.NODEMAILER_EMAIL}`,
+    to: `${process.env.ARIZONA_SIGN_EMAIL}`,
     subject: 'Request for Installation Quote',
     text: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nCrane Lift Description: ${description}`,
     attachments: [

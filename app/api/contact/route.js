@@ -13,8 +13,8 @@ export async function POST(request){
   });
     
   const mailOptions = {
-    from: 'anthony.morton@prestigeworldwidewebdesignllc.com',
-    to: 'anthony.morton@prestigeworldwidewebdesignllc.com',
+    from: `${process.env.NODEMAILER_EMAIL}`,
+    to: `${process.env.ARIZONA_SIGN_EMAIL}`,
     subject: `Contact Form: ${subject}`,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };

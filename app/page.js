@@ -9,11 +9,11 @@ export default function Home() {
       <div className='py-16 bg-custom-color'>
         <div className="w-full h-[400px] md:h-[700px] relative">
           <Image
-            src="/kingmanSign2Copy.jpg"
-            alt="Installation"
+            src="/fiveBelowResize.jpg"
+            alt="fiveBelow"
             layout="fill"
             objectFit="cover"
-            className="max-w-full object-bottom"
+            className="max-w-full object-top"
           />
         </div>
         <div className="w-full pt-16">
