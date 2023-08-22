@@ -5,7 +5,7 @@ const SignImage = () => {
   return (
     <Image
       src="/culvers2.jpg"
-      alt="Installation"
+      alt="Culvers"
       layout="responsive"
       width={1277}
       height={715}

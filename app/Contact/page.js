@@ -9,7 +9,7 @@ export default function Contact() {
     <div className="pt-16 bg-custom-color">
       <Image
         src="/railroadParkCopyResize.jpg"
-        alt="Lift"
+        alt="RailroadPark"
         layout="responsive"
         objectFit="contain"
         width={1920}
