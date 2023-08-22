@@ -33,7 +33,6 @@ export default function InstallationForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     var formData = new FormData();
-    console.log('file', signInfo.file);
     formData.append('file', signInfo.file, signInfo.file.name);
     formData.append('email', signInfo.email);
     formData.append('name', signInfo.name);
@@ -46,7 +45,6 @@ export default function InstallationForm() {
     });
     setEmailSent(true);
   };
-  console.log(signInfo)
   return (
     !emailSent ? (
       <div className="flex flex-col items-center py-16 px-4">

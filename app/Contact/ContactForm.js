@@ -40,13 +40,14 @@ export default function ContactForm() {
             type="text"
             id="name"
             name="name"
-            className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={contactInfo.name}
             onChange={handleChange}
           />
         </div>
         <div className="mb-4">
+          {/* {emailError && <p className="text-red-500 text-sm mt-1">{emailError}</p>} */}
           <label htmlFor="name" className="block text-sm font-medium">
             Email
           </label>
@@ -54,7 +55,7 @@ export default function ContactForm() {
             type="text"
             id="email"
             name="email"
-            className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={contactInfo.email}
             onChange={handleChange}
@@ -68,7 +69,7 @@ export default function ContactForm() {
             type="text"
             id="subject"
             name="subject"
-            className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={contactInfo.subject}
             onChange={handleChange}
@@ -82,7 +83,7 @@ export default function ContactForm() {
             id="message"
             name="message"
             rows={4}
-            className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="mt-1 block w-full rounded-sm shadow-md focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-2"
             required
             value={contactInfo.message}
             onChange={handleChange}

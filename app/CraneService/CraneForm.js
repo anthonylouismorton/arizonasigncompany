@@ -18,7 +18,7 @@ export default function CraneForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const response = await fetch('/api/crane', {
+    const response = await fetch('/api/craneService', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

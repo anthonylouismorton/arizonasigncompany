@@ -7,7 +7,6 @@ export async function POST(request){
   let name, email, description, phoneNumber, file;
   
   for (const pair of formData.entries()) {
-    console.log(pair)
     const [key, value] = pair;
     if (key === 'name') {
       name = value;
@@ -25,7 +24,6 @@ export async function POST(request){
       file = value;
     }
   };
-  console.log(file, "this is the file")
   const fileBuffer = await file.arrayBuffer();
   const fileBufferUint8Array = new Uint8Array(fileBuffer);
   const fileBufferBuffer = Buffer.from(fileBufferUint8Array);
@@ -53,7 +51,6 @@ export async function POST(request){
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent:', info.response);
     return NextResponse.json({
       message: "email sent"
     },{
