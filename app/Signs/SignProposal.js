@@ -59,7 +59,7 @@ export default function SignProposal() {
       </div>
       <form className="w-full max-w-md" onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-800">
+          <label htmlFor="name" className="block text-md font-medium text-gray-800">
             Name
           </label>
           <input
@@ -73,7 +73,7 @@ export default function SignProposal() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-800">
+          <label htmlFor="email" className="block text-md font-medium text-gray-800">
             Email
           </label>
           <input
@@ -87,7 +87,7 @@ export default function SignProposal() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-800">
+          <label htmlFor="phoneNumber" className="block text-md font-medium text-gray-800">
             Phone Number
           </label>
           <input
@@ -101,7 +101,7 @@ export default function SignProposal() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="description" className="block text-sm font-medium text-gray-800">
+          <label htmlFor="description" className="block text-md font-medium text-gray-800">
             Description
           </label>
           <textarea
@@ -116,8 +116,11 @@ export default function SignProposal() {
             onChange={handleChange}
           />
         </div>
-        <label htmlFor="attachment" className="block text-sm font-medium text-gray-800">
+        <label htmlFor="attachment" className="block text-md font-medium text-gray-800">
           Attach Document
+          <span className=" pl-2 text-xs font-medium text-red-500">
+            *File size limited to 20 MB
+          </span>
         </label>
         <input
           type="file"
@@ -129,7 +132,7 @@ export default function SignProposal() {
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-sm font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"
+          className="px-4 py-2 bg-before-yellow border border-transparent rounded-sm font-semibold hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"
         >
           Submit
         </button>

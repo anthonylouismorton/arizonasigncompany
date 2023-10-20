@@ -33,7 +33,7 @@ export default function ContactForm() {
       <h1 className="text-header-yellow font-bold text-5xl mb-6">Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium">
+          <label htmlFor="name" className="block text-md font-medium">
             Name
           </label>
           <input
@@ -47,8 +47,8 @@ export default function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          {/* {emailError && <p className="text-red-500 text-sm mt-1">{emailError}</p>} */}
-          <label htmlFor="name" className="block text-sm font-medium">
+          {/* {emailError && <p className="text-red-500 text-md mt-1">{emailError}</p>} */}
+          <label htmlFor="name" className="block text-md font-medium">
             Email
           </label>
           <input
@@ -62,7 +62,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium">
+          <label htmlFor="name" className="block text-md font-medium">
             Subject
           </label>
           <input
@@ -76,7 +76,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium">
+          <label htmlFor="name" className="block text-md font-medium">
             Message
           </label>
           <textarea
@@ -91,7 +91,7 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-sm font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"
+          className="px-4 py-2 bg-before-yellow border border-transparent rounded-sm font-semibold hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"
         >
           Submit
         </button>

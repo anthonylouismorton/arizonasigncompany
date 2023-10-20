@@ -41,7 +41,7 @@ export default function CraneForm() {
       </div>
       <form className="w-full max-w-md" onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium">
+          <label htmlFor="name" className="block text-md font-medium">
             Name
           </label>
           <input
@@ -55,7 +55,7 @@ export default function CraneForm() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="dateAndTime" className="block text-sm font-medium">
+          <label htmlFor="dateAndTime" className="block text-md font-medium">
             Requested Date/Time of Crane Service
           </label>
           <input
@@ -69,7 +69,7 @@ export default function CraneForm() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium">
+          <label htmlFor="email" className="block text-md font-medium">
             Email
           </label>
           <input
@@ -83,7 +83,7 @@ export default function CraneForm() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="phoneNumber" className="block text-sm font-medium">
+          <label htmlFor="phoneNumber" className="block text-md font-medium">
             Phone Number
           </label>
           <input
@@ -97,7 +97,7 @@ export default function CraneForm() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="description" className="block text-sm font-medium">
+          <label htmlFor="description" className="block text-md font-medium">
             Crane Service Description
           </label>
           <textarea
@@ -114,7 +114,7 @@ export default function CraneForm() {
         </div>
         <button
           type="submit"
-          className="px-4 py-2 bg-before-yellow text-black border border-transparent rounded-sm font-semibold text-white hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"
+          className="px-4 py-2 bg-before-yellow border border-transparent rounded-sm font-semibold hover:bg-black hover:text-header-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-before-yellow mt-4"
         >
           Submit
         </button>
