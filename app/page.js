@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import PageLinks from './pagelinks';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
             alt="fiveBelow"
             layout="fill"
             objectFit="cover"
+            priority={true}
             className="max-w-full object-top"
           />
         </div>
