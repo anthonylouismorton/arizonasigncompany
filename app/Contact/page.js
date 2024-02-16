@@ -10,11 +10,10 @@ export default function Contact() {
       <Image
         src="/railroadParkCopyResize.jpg"
         alt="RailroadPark"
-        layout="responsive"
-        objectFit="contain"
         width={1920}
         height={1268}
         className="max-w-full"
+        priority={true}
       />
       <ContactForm />
       <Footer />
