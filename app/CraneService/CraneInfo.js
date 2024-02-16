@@ -1,17 +1,13 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const CraneInfo = () => {
   return (
     <div>
-      <Image
+      <img
         src="/liftCopy.jpeg"
         alt="Lift"
-        layout="responsive"
-        objectFit="contain"
-        width={1920}
-        height={1262}
-        className="max-w-full"
+        className="w-full"
       />
       <div className="pt-12">
         <h1 className="relative text-header-yellow font-bold text-5xl pb-6 pl-6 pr-6 sm:pl-6 md:pl-12 lg:pl-24 before:absolute before:content ' ' before:w-3 before:h-14 before:bg-before-yellow before:left-0 before:top-1/6">
