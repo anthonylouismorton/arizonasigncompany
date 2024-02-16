@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="text-center px-4">
         <h2 className="text-2xl font-semibold">Hours of operation</h2>
         <p className="py-2">
-          Monday - Friday 8AM - 5PM
+          Monday - Friday 9AM - 4PM
         </p>
         <p>
           Closed Most Major Holidays
