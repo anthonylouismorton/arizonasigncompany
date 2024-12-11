@@ -17,31 +17,31 @@ export default function Home() {
             priority={true}
             className="max-w-full object-top brightness-50"
           />
-          <div className="absolute inset-x-4 inset-y-4 sm:inset-x-40 sm:inset-y-40 ">
+          <div className="absolute inset-x-4 inset-y-4 md:inset-x-40 md:inset-y-40 ">
             <div className="text-white">
-              <h1 className="md:text-6xl sm:text-4xl text-xl font-bold sm:mb-6 mb-1">
+              <h1 className="lg:text-6xl md:text-4xl text-xl font-bold md:mb-6 mb-1">
                 Visibility Starts Here
               </h1>
-              <p className="md:text-4xl sm:text-2xl text-xl font-bold mb-32 sm:mb-20">
+              <p className="lg:text-4xl md:text-2xl text-xl font-bold mb-32 sm:mb-20">
                 We Specialize in Quality Custom Signs.
               </p>
-              <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-4">
-                <div className="inline-flex">
-                  <a
-                    href="/Signs#quote"
-                    className="bg-red-600 text-white py-3 px-5 rounded-md text-md sm:text-lg font-semibold hover:bg-red-700 transition flex items-center space-x-2"
-                  >
-                    <span>Get Started on Your Vision</span>
-                    <i className="fa fa-chevron-right text-xl"></i>
-                  </a>
-                </div>
-                <div className="inline-flex">
+              <div className="flex flex-col lg:flex-row lg:items-center items-start">
+              <div className="pr-4 pb-4 lg:pb-0">
                   <a
                     href="tel:+1-760-207-6587"
-                    className="bg-header-yellow text-black py-3 px-5 rounded-md text-md sm:text-lg font-semibold hover:text-white transition flex items-center space-x-2"
+                    className="bg-header-yellow text-black py-3 px-5 rounded-md text-md sm:text-lg font-semibold hover:text-white transition flex items-center space-x-2 m-0 p-0"
                   >
                     <i className="fa fa-phone"></i>
                     <span>928-303-1300</span>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="/Signs#quote"
+                    className="bg-red-600 text-white py-3 px-5 rounded-md text-md sm:text-lg font-semibold hover:bg-red-700 transition flex items-center space-x-2 m-0 p-0"
+                  >
+                    <span>Get Started on Your Vision</span>
+                    <i className="fa fa-chevron-right"></i>
                   </a>
                 </div>
               </div>
