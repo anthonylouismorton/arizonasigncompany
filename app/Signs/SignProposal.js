@@ -48,12 +48,12 @@ export default function SignProposal() {
   };
   return (
     !emailSent ? (
-    <div className="flex flex-col items-center py-16 px-4">
+    <div id="quote" className="flex flex-col items-center py-16 px-4">
       <div className="w-full max-w-xl">
-        <h1 className="text-3xl font-semibold text-gray-800 text-center mb-4">
-          Interested in receiving a quote?
+        <h1 className="text-2xl font-bold text-gray-800 text-center mb-4">
+          Interested in receiving a quote or bringing your sign vision to life?
         </h1>
-        <h6 className="text-lg text-gray-800 text-center mb-6">
+        <h6 className="font-semibold text-md text-gray-800 text-center mb-6">
           Provide your contact information and a brief description of your project and one of our sales representatives will contact you.
         </h6>
       </div>

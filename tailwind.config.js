@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       backgroundColor: {
         'custom-color': '#eee',
-        'before-yellow': '#ffb612'
+        'before-yellow': '#ffb612',
+        'header-yellow': '#ffb612'
       },
       textColor: {
         'header-yellow': '#ffb612'

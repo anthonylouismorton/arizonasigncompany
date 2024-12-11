@@ -5,7 +5,7 @@ export default function Footer() {
       <div className="text-center px-4 mb-4 sm:mb-0 ">
         <h2 className="text-2xl font-semibold">Contact Information</h2>
         <p className="py-2">
-          Phone: <a href="tel:+123456789">+1 (928) 753-1536</a>
+          Phone: <a href="tel:+9283031300">1 (928) 753-1536</a>
         </p>
         <p>
           Email: <a href="mailto:info@example.com">azsigncomp@citlink.net</a>

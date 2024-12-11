@@ -4,5 +4,5 @@ const nextConfig = {}
 module.exports = {
   images: {
     minimumCacheTTL: 360,
-  },
+  }
 }
