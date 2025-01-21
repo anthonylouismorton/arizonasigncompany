@@ -28,11 +28,11 @@ export default function Home() {
               <div className="flex flex-col lg:flex-row lg:items-center items-start">
               <div className="pr-4 pb-4 lg:pb-0">
                   <a
-                    href="tel:+1-928-303-1300"
+                    href="tel:+1-928-753-1536"
                     className="bg-header-yellow text-black py-3 px-5 rounded-md text-md sm:text-lg font-semibold hover:text-white transition flex items-center space-x-2 m-0 p-0"
                   >
                     <i className="fa fa-phone"></i>
-                    <span>928-303-1300</span>
+                    <span>Call Us</span>
                   </a>
                 </div>
                 <div>
