@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arizonasignco.com/sitemap.xml
