@@ -35,7 +35,7 @@ export const metadata = {
     images: ['/fiveBelowResize.jpg'],
   },
   alternates: {
-    canonical: siteUrl,
+    canonical: `${siteUrl}/`,
   },
   robots: {
     index: true,
