@@ -43,51 +43,16 @@ export const metadata = {
   },
 }
 
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Arizona Sign Company',
-  url: siteUrl,
-  logo: `${siteUrl}/tabLogo.jpg`,
-  image: `${siteUrl}/fiveBelowResize.jpg`,
-  description: 'Arizona Sign Company has been crafting high-quality custom signs, billboards, channel letters, and LED displays since 1945. Serving Arizona, Nevada, and California with sign fabrication, installation, and crane services.',
-  foundingDate: '1945',
-  telephone: '+1-928-753-1536',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Kingman',
-    addressRegion: 'AZ',
-    addressCountry: 'US',
-  },
-  areaServed: [
-    { '@type': 'State', name: 'Arizona' },
-    { '@type': 'State', name: 'Nevada' },
-    { '@type': 'State', name: 'California' },
-  ],
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Signage Products & Services',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom Sign Manufacturing' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Billboard Signs' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LED & Digital Displays' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sign Installation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Crane Services' } },
-    ],
-  },
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
         <link rel='shortcut icon' href='/tabLogo.jpg'/>
       </head>
-      <body className={inter.className}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
+      <body
+        className={inter.className}
+        suppressHydrationWarning={true}
+        >
         <Navbar/>
         {children}
       </body>
