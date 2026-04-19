@@ -82,12 +82,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel='shortcut icon' href='/tabLogo.jpg'/>
+      </head>
+      <body className={inter.className}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
-      </head>
-      <body className={inter.className}>
         <Navbar/>
         {children}
       </body>
