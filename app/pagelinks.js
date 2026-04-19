@@ -55,7 +55,7 @@ export default function PageLinks() {
                   className="transition-brightness hover:brightness-75"
                   layout="fill"
                   objectFit="cover"
-                  priority={true}
+  
                 />
               </div>
             </a>
